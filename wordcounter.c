@@ -25,26 +25,38 @@ int main() {
         lines++;
 
         for(size_t i = 0; buffer[i] != '\0'; i++) {
-            const char current = buffer[i];
+            char current = buffer[i];
 
-            if (isalpha(buffer[i])) {
-                currentWord[currentLen] = buffer[i];
+            if (!isspace(current)) {
+                currentWord[currentLen] = current;
                 currentLen++;
-            } else {
+            } else if (currentLen > 0) {
                 words++;
+
                 currentWord[currentLen] = '\0';
 
                 if (currentLen > maxLen) {
-                    maxLen = currentLen;
                     strcpy(longestWord, currentWord);
+                    maxLen = currentLen;
                 }
-                currentLen = 0;                
-            }
-        }
 
+                currentLen = 0;
+            }
+            
+        }
+            
     }
 
-    printf("Words : %d\n", words);
+    if (currentLen > 0) {
+        words++;
+        currentWord[currentLen] = '\0';
+        if (currentLen > maxLen) {
+            strcpy(longestWord, currentWord);
+        }
+    }
+
+    printf("Words: %d\n", words);
+    printf("Lines: %d\n", lines);
     printf("Longest word: %s", longestWord);
 
     return 0;
