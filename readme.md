@@ -5,3 +5,6 @@ A simple calculator program that I made within minutes with following the guide 
 
 ## Wordcounter.c
 This is the big boy program which took the most time, I tried to learn each and every step of the way and how it works and LOTS of debugging on the way like It couldn't read the files because of the directory folder being in the bin instead of my project lmao. And more than an hour to finish the longest word counting. This counts amount of words, longest word.
+
+## Contact.c
+This project has been the hardest c project for me yet beacause of the complexity of the program it self, I had to search all the functions usage, use AI for checking if this was incorrect or not lol.
