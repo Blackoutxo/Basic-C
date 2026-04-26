@@ -8,3 +8,6 @@ This is the big boy program which took the most time, I tried to learn each and 
 
 ## Contact.c
 This project has been the hardest c project for me yet beacause of the complexity of the program it self, I had to search all the functions usage, use AI for checking if this was incorrect or not lol.
+
+## Lineplotter.c
+This program plots a graph for straight line and parabolas, since most of the codes were given in the website by nico I did this quite easily than the others but the main huddles were the plotting issues it self like it just printed out skull emojis and laughing emojis (ts was mocking me) and later on found out the issue due to memory overflows and fixed it lol.
